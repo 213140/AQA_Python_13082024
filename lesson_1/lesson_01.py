@@ -15,18 +15,18 @@ for letter in "Hello world!":
 # task 04 == Зробіть так, щоб кількість бананів була
 # завжди в чотири рази більша, ніж яблук
 apples = 2
-banana = 4*apples
+banana = 4 * apples
 
 # task 05 == виправте назви змінних
-storona_1 = 1
-storona_2 = 2
-storona_3 = 3
-storona_4 = 4
+side_1 = 1
+side_2 = 2
+side_3 = 3
+side_4 = 4
 
 # task 06 == Порахуйте периметр фігури з task 05
 # та виведіть його для користувача
-perimetery = storona_1 + storona_2 + storona_3 + storona_4
-print(perimetery)
+perimeter = side_1 + side_2 + side_3 + side_4
+print(perimeter)
 
 
 """
@@ -40,11 +40,11 @@ print(perimetery)
 У саду посадили 4 яблуні. Груш на 5 більше яблунь, а слив - на 2 менше.
 Скільки всього дерев посадили в саду?
 """
-jabluni = 4
-grushi = jabluni + 5
-slivy = jabluni - 2
-derevja = jabluni + grushi + slivy
-print(derevja)
+apples = 4
+pears = apples + 5
+plums = apples - 2
+trees = apples + pears + plums
+print(trees)
 
 # task 08
 """
@@ -52,10 +52,10 @@ print(derevja)
 Після обіду температура опустилася на 10 градусів.
 Надвечір потепліло на 4 градуси. Яка температура надвечір?
 """
-temperatura_do_obidu = 5
-temperatura_pislia_obidu = temperatura_do_obidu - 10
-temperatura_nadvecir = temperatura_pislia_obidu + 4
-print(temperatura_nadvecir)
+temperature_before_lunch = 5
+temperature_after_lunch = temperature_before_lunch - 10
+temperature_in_the_evening = temperature_after_lunch + 4
+print(temperature_in_the_evening)
 
 # task 09
 """
@@ -63,9 +63,9 @@ print(temperatura_nadvecir)
 1 хлопчик захворів та 2 дівчинки не прийшли сьогодні.
 Скількі сьогодні дітей у театральному гуртку?
 """
-chlopcik = 24
-divchat = chlopcik/2
-print(chlopcik+divchat-1-2)
+mens = 24
+girls = mens/2
+print(mens + girls - 1 - 2)
 
 # task 10
 """
@@ -73,7 +73,7 @@ print(chlopcik+divchat-1-2)
 а третя - як половина вартості першої та другої разом.
 Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 """
-pervsha_kniga = 8
-druga_kniga = pervsha_kniga + 2
-tretja_kniga = pervsha_kniga/2+druga_kniga/2
-print(tretja_kniga)
+first_book = 8
+second_book = first_book + 2
+third_book = first_book / 2 + second_book / 2
+print(third_book)
