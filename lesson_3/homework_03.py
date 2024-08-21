@@ -2,7 +2,13 @@
 #alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
 
 # task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
-alice_in_wonderland = """'"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'"""
+alice_in_wonderland = """
+'"Would you tell me, please, which way I ought to go from here?"\n
+"That depends a good deal on where you want to get to," said the Cat.\n
+"I don't much care where ——" said Alice.\n
+"Then it doesn't matter which way you go," said the Cat.\n
+"—— so long as I get somewhere," Alice added as an explanation.\n
+"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'"""
 
 # task 02 == Знайдіть та відобразіть всі символи одинарної лапки (') у тексті
 for character in alice_in_wonderland:
@@ -27,7 +33,7 @@ print(alice_in_wonderland)
 """
 black_sea_area = 436402
 azov_sea_area = 37800
-print(f"Black and Azov seas cover {black_sea_area+azov_sea_area} km2")
+print(f"Black and Azov seas cover {black_sea_area + azov_sea_area} km2")
 
 # task 05
 """
@@ -63,11 +69,11 @@ b) 9907 : 9     e) 7128 : 5
 c) 2789 : 5     f) 19224 : 9
 """
 print(f"rest of 8019 : 8 is: {8019%8}")
-print(f"rest of 9907 : 9 is: {8019%8}")
-print(f"rest of 2789 : 5 is: {8019%8}")
-print(f"rest of 7248 : 6 is: {8019%8}")
-print(f"rest of 7128 : 5 is: {8019%8}")
-print(f"rest of 19224 : 9 is: {8019%8}")
+print(f"rest of 9907 : 9 is: {9907%9}")
+print(f"rest of 2789 : 5 is: {2789%5}")
+print(f"rest of 7248 : 6 is: {7248%6}")
+print(f"rest of 7128 : 5 is: {7128%5}")
+print(f"rest of 19224 : 9 is: {19224%9}")
 
 # task 08
 """
