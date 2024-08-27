@@ -51,7 +51,7 @@ print(f"Number of \"h\" letter in description: {adwentures_of_tom_sawer.count("h
 list_of_words = adwentures_of_tom_sawer.split()
 number_of_title_words = 0
 for word in list_of_words:
-    if(word.istitle()):
+    if word.istitle():
         number_of_title_words += 1
 print(f"Number of title word in description: {number_of_title_words}")
 
