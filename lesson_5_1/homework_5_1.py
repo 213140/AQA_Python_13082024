@@ -49,9 +49,9 @@ search_criteria = (2017, 1.6, 36000)
 
 list_of_passing_cars = [] #list of cars which match requirements
 for car_name, car_values in car_data.items():
-    if car_values[1] >= search_criteria[0]:
-        if car_values[2] >= search_criteria[1]:
-            if car_values[4] <= search_criteria[2]:
+    if(car_values[1] >= search_criteria[0] and
+      car_values[2] >= search_criteria[1] and
+      car_values[4] <= search_criteria[2]):
                 #list_of_passing_cars.append({"name": car_name, "price": car_values[4]})
                 list_of_passing_cars.append([car_values[4], car_name])
 
