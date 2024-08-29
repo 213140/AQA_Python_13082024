@@ -23,11 +23,14 @@ people_records = [
 people_records.insert(0, ('Andzej', 'Mackevic', 29, 'Engineer', 'Czestochowa'))
 
 # 2 - In modified list swap elements with indexes 1 and 5 (1<->5). Print result
-copy_of_people_records = deepcopyall.deepcopy(people_records)
-element_1 = list(copy_of_people_records[1])
-element_5 = list(copy_of_people_records[5])
-people_records[1] = element_5
-people_records[5] = element_1
+# copy_of_people_records = deepcopyall.deepcopy(people_records)
+# element_1 = list(copy_of_people_records[1])
+# element_5 = list(copy_of_people_records[5])
+# people_records[1] = element_5
+# people_records[5] = element_1
+# print(people_records)
+### Updated according to pull request comments
+people_records[1], people_records[5] = people_records[5], people_records[1]
 print(people_records)
 
 # 3 - check that all people in modified list with records indexes 6, 10, 13
