@@ -63,7 +63,7 @@ print(f"Reversed ABC is {reverse_list('ABC')}")
 """  Написати функцію, яка приймає список слів та повертає найдовше слово у списку.
 """
 def longest_string(input_string_list):
-    return (sorted(input_string_list))[len(input_string_list) -1]
+    return (sorted(input_string_list))[len(input_string_list) - 1]
 # Function verification
 input_list = ["aa", "aaa", "aaaa"]
 print(f"Longest string in {input_list} is {longest_string(input_list)}")
