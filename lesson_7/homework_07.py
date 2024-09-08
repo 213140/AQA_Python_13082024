@@ -129,5 +129,5 @@ def even_numbers_sum_in_string(user_list):
             list2.append((item))
     print(f"Sum of all even numbers is {sum(list2)}")
 # Test function
-new_list = [1, 4, 57, 79, 6, 9, 12, 7, 9, 11, 100 ]
+new_list = [1, 4, 57, 79, 6, 9, 12, 7, 9, 11, 100]
 even_numbers_sum_in_string(new_list)
