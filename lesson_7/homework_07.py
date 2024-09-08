@@ -56,7 +56,7 @@ print(f"Average of list {input_list} is {average_of_numbers_list(input_list)}")
 def reverse_list(input_string):
     return input_string[::-1]
 # Function verification
-print(f"Reversed ABC is {reverse_list("ABC")}")
+print(f"Reversed ABC is {reverse_list('ABC')}")
 
 
 # task 5
