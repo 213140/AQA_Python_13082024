@@ -44,7 +44,7 @@ print(f"Sum of 2 + 2 is {sum_two_numbers(2, 2)}")
 """  Написати функцію, яка розрахує середнє арифметичне списку чисел.
 """
 def average_of_numbers_list(input_numbers_list):
-    return sum(input_numbers_list)/ len(input_numbers_list)
+    return sum(input_numbers_list) / len(input_numbers_list)
 # Function verification
 input_list = [1, 2, 3, 4]
 print(f"Average of list {input_list} is {average_of_numbers_list(input_list)}")
