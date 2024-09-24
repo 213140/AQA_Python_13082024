@@ -1,4 +1,5 @@
 .idea/
+lesson_9/tests/test_API.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
