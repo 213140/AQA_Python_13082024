@@ -11,9 +11,10 @@ def remove_duplicates_from_csv_file(path, file1_name, file2_name):
     Example of duplication in two files (random.csv as example):
     Los Angeles, CA  90057",(213) 480-1385,"161 S. Occidental Blvd. #19\n
     """
-    if not (current_Path / 'result_mackevic.csv').exists():
-        (current_Path / 'result_mackevic.csv').touch()
-    with open(current_Path / 'result_mackevic.csv', 'w') as result_file:
+    result_csv_path = current_Path / 'result_mackevic.csv'
+    if not (result_csv_path).exists():
+        (result_csv_path).touch()
+    with open(result_csv_path, 'w') as result_file:
         with open(path / file1_name, 'r') as file1:
             with open(path / file2_name, 'r') as file2:
                 file1_content_as_lines = file1.readlines()
