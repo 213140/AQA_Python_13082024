@@ -2,25 +2,22 @@
 Напишіть тест, який перевіряє наявність атрибутів з Manager та Developer у класі TeamLead
 """
 
-from pytest import fail
+from pytest import fail, mark
 from src1 import *
 
 class TestTeamLeadClassInheritance:
-    def test_manager_atributes_positive(self):
-        # Arrange & Act
-        new_lead = TeamLead()
-        try:
-            assert new_lead.department != None
-        except AttributeError:
-            fail("Manager attribute is missing!")
+    # Arrange
+    new_lead = TeamLead()
 
-    def test_developer_atributes_positive(self):
-        # Arrange & Act
-        new_lead = TeamLead()
-        # Assert
+    @mark.parametrize("attribute", [
+        (new_lead.department),
+        (new_lead.programming_language)
+    ])
+    def test_manager_atributes(self, attribute):
+        # Act
         try:
-            assert new_lead.programming_language != None
+            assert attribute is not None
         except AttributeError:
-            fail("Developer attribute is missing!")
+            fail("Attribute is missing!")
 
 
