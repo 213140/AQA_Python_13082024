@@ -12,7 +12,7 @@ class IteratorReverseList:
         return self
 
     def __next__(self):
-        if self.current_position <= 0 & self.current_position < self.initial_list.__len__():
+        if self.current_position <= 0 & self.current_position < self.initial_list.__len__() * -1:
             self.current_position -= 1
             return self.initial_list[self.current_position]
         else:
